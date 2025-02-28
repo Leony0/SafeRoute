@@ -1,0 +1,72 @@
+.crime-form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    position: fixed;
+    top: 540px;
+    left: 20px;
+    z-index: 900;
+  }
+  
+  .crime-form-title {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .crime-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .crime-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .crime-form input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .crime-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+  }
+  
+  .crime-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .crime-form-container {
+        position: relative; /* fixed から relative に変更 */
+        top: 70px;
+        left: 10px;
+        margin-bottom: 10px;
+        width: calc(100% - 20px);
+        max-width: none;
+      }
+  }

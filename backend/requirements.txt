@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+mysql-connector-python
+python-dotenv
+pymysql
+pydantic
+cryptography
+folium
